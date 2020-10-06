@@ -23,7 +23,6 @@ public class PaletteActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
-                //System.out.println("CLICKED ON: " + CustomAdapter.colors[position]);
                 sendMessage(view, position);
             }
 

@@ -17,7 +17,6 @@ public class CanvasActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(PaletteActivity.EXTRA_MESSAGE);
-        //System.out.println("MESSAGE: " + message);
         TextView textView = findViewById(R.id.textView);
         if(message.equals("White")) {
             findViewById(R.id.background).setBackgroundColor(Color.WHITE);
