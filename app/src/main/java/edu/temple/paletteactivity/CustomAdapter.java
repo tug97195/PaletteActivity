@@ -57,7 +57,6 @@ public class CustomAdapter extends BaseAdapter {
         TextView v = new TextView(mContext);
         v.setText(colors[position]);
         try{
-
             if(((TextView) v).getText().equals("White")) {
                 v.setBackgroundColor(Color.WHITE);
             }
