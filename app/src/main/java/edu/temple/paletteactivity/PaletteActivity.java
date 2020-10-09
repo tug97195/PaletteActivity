@@ -17,7 +17,7 @@ public class PaletteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().setTitle("Palette Activity");
+        getSupportActionBar().setTitle(R.string.activity_1);
 
         GridView gridView = (GridView)findViewById(R.id.gridview);
         final CustomAdapter CustomAdapter = new CustomAdapter(this);

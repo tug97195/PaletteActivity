@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">Color Changing App</string>
     <string name="msg_color">DEFAULT_TEXT</string>
+    <string name="activity_1">Palette Activity</string>
+    <string name="activity_2">Canvas Activity</string>
+
+    <string name="White">White</string>
+    <string name="Black">Black</string>
+    <string name="Cyan">Cyan</string>
+    <string name="DKGray">Dark Gray</string>
+    <string name="Gray">Gray</string>
+    <string name="LTGray">Light Gray</string>
+    <string name="Magenta">Magenta</string>
+    <string name="Green">Green</string>
+    <string name="Red">Red</string>
+    <string name="Yellow">Yellow</string>
+    <string name="Blue">Blue</string>
+
 </resources>

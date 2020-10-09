@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Application de changement de couleur</string>
+    <string name="msg_color">TEXTE PAR DEFAUT</string>
+    <string name="activity_1">Activité de la palette</string>
+    <string name="activity_2">Activité de toile</string>
+
+    <string name="White">Blanc</string>
+    <string name="Black">Noir</string>
+    <string name="Cyan">Cyan</string>
+    <string name="DKGray">Gris foncé</string>
+    <string name="Gray">Gris</string>
+    <string name="LTGray">Gris clair</string>
+    <string name="Magenta">Magenta</string>
+    <string name="Green">Vert</string>
+    <string name="Red">Rouge</string>
+    <string name="Yellow">Jaune</string>
+    <string name="Blue">Bleu</string>
+
+</resources>
