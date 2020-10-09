@@ -3,6 +3,7 @@
     <string name="msg_color">DEFAULT_TEXT</string>
     <string name="activity_1">Palette Activity</string>
     <string name="activity_2">Canvas Activity</string>
+    <string name="instructions">Click a color below to launch the Canvas</string>
 
     <string name="White">White</string>
     <string name="Black">Black</string>

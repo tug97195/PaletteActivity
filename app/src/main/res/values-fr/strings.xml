@@ -3,6 +3,7 @@
     <string name="msg_color">TEXTE PAR DEFAUT</string>
     <string name="activity_1">Activité de la palette</string>
     <string name="activity_2">Activité de toile</string>
+    <string name="instructions">Cliquez sur une couleur ci-dessous pour lancer le canevas</string>
 
     <string name="White">Blanc</string>
     <string name="Black">Noir</string>
