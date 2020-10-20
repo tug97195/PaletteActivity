@@ -2,20 +2,12 @@ package edu.temple.paletteactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.EditText;
-import android.widget.GridView;
 
 public class MainActivity extends AppCompatActivity implements PaletteFragment.ItemPickedInterface{
-    FragmentManager fm;
+    FragmentManager frag_man;
     CanvasFragment canvasFragment = new CanvasFragment();
 
     //Main project and Activity
@@ -23,21 +15,17 @@ public class MainActivity extends AppCompatActivity implements PaletteFragment.I
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().setTitle(R.string.activity_1);
+        getSupportActionBar().setTitle(getString(R.string.activity_1));
 
-
-        Resources res = getResources();
-        String[] hexVals = res.getStringArray(R.array.hexArr);
-
-        fm = getSupportFragmentManager();
-        fm.beginTransaction().add(R.id.frameLayoutTop, PaletteFragment.newInstance(hexVals)).add(R.id.frameLayoutBot, canvasFragment).commit();
+        frag_man = getSupportFragmentManager();
+        frag_man.beginTransaction().add(R.id.container_1, PaletteFragment.newInstance(getResources().getStringArray(R.array.hexArr))).add(R.id.container_2, canvasFragment).commit();
 
 
     }
     @Override
     public void itemPicked(int index) {
         Resources res = getResources();
-        String[] hexVals = res.getStringArray(R.array.hexArr);
+        String[] hex = res.getStringArray(R.array.hexArr);
         String[] colors = {
                 getString(R.string.White),
                 getString(R.string.Black),
@@ -53,6 +41,6 @@ public class MainActivity extends AppCompatActivity implements PaletteFragment.I
 
         };
 
-        canvasFragment.displayText(colors[index], hexVals[index]);
+        canvasFragment.displayText(colors[index], hex[index]);
     }
 }
