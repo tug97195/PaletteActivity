@@ -1,10 +1,22 @@
 <resources>
     <string name="app_name">Color Changing App</string>
-    <string name="msg_color">DEFAULT_TEXT</string>
+    <string name="msg_color">Pick a color</string>
     <string name="activity_1">Palette Activity</string>
     <string name="activity_2">Canvas Activity</string>
     <string name="instructions">Click a color below to launch the Canvas</string>
-
+    <string-array name="hexArr">
+        <item>#FFFFFF</item>
+        <item>#000000</item>
+        <item>#00FFFF</item>
+        <item>#696969</item>
+        <item>#808080</item>
+        <item>#A9A9A9</item>
+        <item>#FF00FF</item>
+        <item>#00ff00</item>
+        <item>#FF0000</item>
+        <item>#FFFF00</item>
+        <item>#0000FF</item>
+    </string-array>
     <string name="White">White</string>
     <string name="Black">Black</string>
     <string name="Cyan">Cyan</string>
@@ -16,5 +28,6 @@
     <string name="Red">Red</string>
     <string name="Yellow">Yellow</string>
     <string name="Blue">Blue</string>
+
 
 </resources>

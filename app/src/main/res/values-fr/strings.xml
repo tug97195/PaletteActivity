@@ -1,10 +1,22 @@
 <resources>
     <string name="app_name">Application de changement de couleur</string>
-    <string name="msg_color">TEXTE PAR DEFAUT</string>
+    <string name="msg_color">Choisis une couleur</string>
     <string name="activity_1">Activité de la palette</string>
     <string name="activity_2">Activité de toile</string>
     <string name="instructions">Cliquez sur une couleur ci-dessous pour lancer le canevas</string>
-
+    <string-array name="hexArr">
+        <item>#FFFFFF</item>
+        <item>#000000</item>
+        <item>#00FFFF</item>
+        <item>#696969</item>
+        <item>#808080</item>
+        <item>#A9A9A9</item>
+        <item>#FF00FF</item>
+        <item>#00ff00</item>
+        <item>#FF0000</item>
+        <item>#FFFF00</item>
+        <item>#0000FF</item>
+    </string-array>
     <string name="White">Blanc</string>
     <string name="Black">Noir</string>
     <string name="Cyan">Cyan</string>

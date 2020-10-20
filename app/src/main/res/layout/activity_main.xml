@@ -4,44 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaletteActivity">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
+    <FrameLayout
+        android:id="@+id/frameLayoutTop"
         android:layout_width="409dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="1dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="1dp"
-        android:text="@string/instructions"
-        android:textColor="#03A9F4"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/gridview"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayoutBot"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <GridView
-
-        android:id="@+id/gridview"
+    <FrameLayout
+        android:id="@+id/frameLayoutBot"
         android:layout_width="409dp"
-        android:layout_height="680dp"
-
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="2dp"
-        android:numColumns="3"
+        android:layout_height="360dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutTop">
 
-    </GridView>
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
