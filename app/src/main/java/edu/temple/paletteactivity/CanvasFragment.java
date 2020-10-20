@@ -33,6 +33,12 @@ public class CanvasFragment extends Fragment {
     public void displayText(String message, String hexValues) {
         textView.setText(message);
         bg.setBackgroundColor(Color.parseColor(hexValues));
-
+        //Make Text Prettier and easier to read.
+        if(message.equals(getString(R.string.Black)) || message.equals(getString(R.string.DKGray))){
+            textView.setTextColor(Color.WHITE);
+        }
+        if(message.equals(getString(R.string.White)) || message.equals(getString(R.string.Yellow))){
+            textView.setTextColor(Color.BLACK);
+        }
     }
 }
